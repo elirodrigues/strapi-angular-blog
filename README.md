@@ -36,6 +36,6 @@ Strapi to work with logins, recover passwords etc. Is able to collect JWT and us
 
 ## Final words
 
-Don't forget to download the other/pair project, the Strapi one.
+Don't forget to download the other/pair project, the Strapi one, available at https://github.com/elirodrigues/strapi-angular-blog-backend
 
 Eli
