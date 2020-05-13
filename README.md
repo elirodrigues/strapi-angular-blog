@@ -11,8 +11,8 @@ Consider that someone needs to use Strapi as CMS for a journal/blog. The project
 
 ## References
 I've used two templates from bootstrap website to create the HTMLs. 
-https://getbootstrap.com/docs/4.0/examples/blog/#
-https://getbootstrap.com/docs/4.4/examples/album/
+https://getbootstrap.com/docs/4.0/examples/blog/#<br>
+https://getbootstrap.com/docs/4.4/examples/album/<br>
 
 ## Structure
 
