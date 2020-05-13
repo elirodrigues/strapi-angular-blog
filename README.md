@@ -18,7 +18,7 @@ https://getbootstrap.com/docs/4.4/examples/album/
 
 - app<br>
 --- app-routing-module: Contains all the routes used<br>
---- app.api.ts: It's where you configute the API endpoin<br>t
+--- app.api.ts: It's where you configute the API endpoint<BR>
 --- blog-header: Show a categories menu<br>
 --- blog-footer: Just a simple signature in HTML<br>
 --- blog-grid: Showing a grid of posts<br>
