@@ -1,0 +1,31 @@
+<div class="container"> 
+  <div *ngFor="let item of featuredPost" class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">{{item.title}}</h1>
+      <p class="lead my-3">{{item.content | ellipsis : '255'}}</p>
+      <p class="lead mb-0"><a [routerLink]="['/blog-post', item.id]" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+</div>
+<main role="main">
+  <div class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let item of posts" class="col-md-4">
+          <a [routerLink]="['/blog-post', item.id]" class="text-muted">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/placeholder640x360.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">{{item.content | ellipsis : '144'}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">Author: Eli</small>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -2,26 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
-## Development server
+## Objective
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The objective of this project is showing how to connect an Angular Application to Strapi Headless CMS (strapi.io). This repository makes pair with the strapi-angular-blog-backend, where a configured Strapi is available for download and use.
 
-## Code scaffolding
+## Use case
+Consider that someone needs to use Strapi as CMS for a journal/blog. The project was created for 2 entities only: Category and Posts.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## References
+I've used two templates from bootstrap website to create the HTMLs. 
+https://getbootstrap.com/docs/4.0/examples/blog/#
+https://getbootstrap.com/docs/4.4/examples/album/
 
-## Build
+## Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- app
+--- app-routing-module: Contains all the routes used
+--- app.api.ts: It's where you configute the API endpoint
+--- blog-header: Show a categories menu
+--- blog-footer: Just a simple signature in HTML
+--- blog-grid: Showing a grid of posts
+--- blog-post: Where one can read a post
+--- blog-sidebar: Static, just to compose the interface
+--- shared
+------ model: It has models for each entity
+------ pipes: Contains a pipe to reduce a text to a certain number of characters
+------ services: 
+--------- Autenthication: The code completed, although its not used in this example
+--------- Generical: It has commented code, which will be used only if you configure Strapi to work with logins, recover passwords etc. Is able to collect JWT and use it accross the app.
+--------- Category: Some Gets for the Category Entity
+--------- Posts: Some Gets for the Post Entity
 
-## Running unit tests
+## Final words
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Don't forget to download the other/pair project, the Strapi one.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Eli

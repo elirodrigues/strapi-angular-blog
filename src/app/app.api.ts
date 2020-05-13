@@ -1,0 +1,1 @@
+export const API_STRAPI = 'http://localhost:1337';
